@@ -12,15 +12,116 @@
             font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
         }
 
+        h1 {
+            font-family: 'Gajraj One', cursive;
+            text-align: center;
+            color: #A78B73;
+            border: 1px solid #A78B73;
+            line-height: 80px;
+            border-radius: 10px;
+            max-width: 80%;
+            display: block;
+            margin: 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #A78B73;
+        }
+
+        hr {
+            border: 3px solid #A78B73;
+            border-radius: 5px;
+            max-width: 80%;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+            max-height: 500px;
+            border: 2px solid #A78B73;
+            border-radius: 10px;
+        }
+
+        p {
+            font-family: Cerebri Sans;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.5;
+            display: block;
+            margin: 18px auto 0px auto;
+            max-width: 80%;
+
+        }
+
         .container {
-            background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px 60px 0 60px;
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px gray;
+        }
+
+        .name {
+            color: #A78B73;
+            font-size: 25px;
+        }
+
+        .more-info {
+            color: #7d51e8;
+            max-width: 80%;
+            text-decoration: none;
+            display: block;
+            margin: 5px auto 20px auto;
+        }
+
+        .more-info:hover {
+            text-decoration: underline;
+        }
+
+        .job-offer {
+            display: block;
+            margin: 50px auto;
+            padding: 15px 20px;
+            font-size: 25px;
+            font-weight: 600;
+            color: navajowhite;
+            background-color: #A78B73;
+            border: 2px solid #A78B73;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px gray;
+            transition: all 200ms ease-in-out;
+        }
+
+        .job-offer:hover {
+            color: #A78B73;
+            background-color: navajowhite;
+            cursor: pointer;
+        }
+
+        .footer {
+            margin: 50px auto 0px auto;
+            text-align: center;
+            font-size: 15px;
+            color: gray;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #7d51e8;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Looking for job! 😪</h1>
+        <h1>I am looking for job! 😪</h1>
         <h2>Junior Full-stack Developer</h2>
         <hr>
         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/130/original/unemployed-sad-cartoon-man-showing-empty-pockets-poverty-absence-money-no-vector-concept-195258169.jpg?1676738859"
@@ -39,12 +140,12 @@
             at first. Then I tried to change my profession from front-end to back-end, and I learned Php, Laravel, MySQL.
             <br> So, I can tell that I'm kinda Junior Full-stack Developer.🙄
         </p>
-        <a href="https://www.linkedin.com/in/negin-banay-shahani-7180ab19a/">Check my full resume here!</a>
+        <a href="https://www.linkedin.com/in/negin-banay-shahani-7180ab19a/" class="more-info">Check my full resume here!</a>
         <button class="job-offer">
             Job Offer
         </button>
-        <div class="footer">
-            <p>This page was built by
+        <div>
+            <p class="footer">This page was built by
                 <a href="https://github.com/negin-shahani">
                     <em>Negin Banay Shahani</em>
                 </a>💜</p>
