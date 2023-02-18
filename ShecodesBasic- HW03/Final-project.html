@@ -162,6 +162,27 @@
                 </a>💜</p>
         </div>
     </div>
+    <script>
+        function offer() {
+            let name = prompt("What is your name?");
+            let answer = prompt("Are you a recruiter? (y/n)");
+            if(name.length>0 && answer.toString().toLowerCase() === "y"){
+                alert(
+                    "Nice to meet you, "
+                    + name
+                    + "! Please be in touch with me through my E-mail: neginshahany@gmail.com"
+                );
+            }else if(name.length > 0 && answer.toString().toLowerCase() === "n"){
+                alert(
+                    "mmm... OK BYE!!!!\n I'm just kidding! Let's be freinds:) E-mail: neginshahany@gmail.com"
+                );
+            }else{
+                alert("please try again! Enter your name and enter either 'y' or 'n' in second section! ")
+            }
+        }
+        let jobOffer = document.querySelector(".job-offer");
+        jobOffer.addEventListener("click", offer);
+    </script>
 </body>
 
 </html>
